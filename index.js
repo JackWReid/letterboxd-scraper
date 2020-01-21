@@ -43,6 +43,8 @@ const DOWNLOAD_URL = 'https://letterboxd.com/data/export';
       }).then(r => r.text());
     });
 
+    // https://github.com/ZJONSSON/node-unzipper
+    // https://github.com/puppeteer/puppeteer/issues/299
     //fs.writeFileSync('./output/archive.zip', dlResponse);
     //fs.createReadStream('./output/archive.zip').pipe(
     //  unzipper.Extract({path: './output/'}),
